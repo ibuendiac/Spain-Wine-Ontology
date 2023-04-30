@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi/"
+     xml:base="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:uoc_ignasi="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi">
+        <rdfs:comment>Ignasi Buendia Corruchaga</rdfs:comment>
+        <rdfs:comment>Spanish Wines Ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#sameAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_2b1de19d_1898_43fa_9047_ef5fd030766d -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_2b1de19d_1898_43fa_9047_ef5fd030766d">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>La bodega produce este vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">producesWine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_41c225dd_1735_4fc4_8c89_d5c3da5b61a4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_41c225dd_1735_4fc4_8c89_d5c3da5b61a4">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Country"/>
+        <rdfs:comment>País de procedencia del vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">isInCountry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_45a7e1e3_d4b7_4e8d_8340_d1d955571dde -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_45a7e1e3_d4b7_4e8d_8340_d1d955571dde">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+        <rdfs:comment>El precio que tiene el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasPrice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+        <rdfs:comment>Bodega que elabora el video.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasWinery</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_782e9994_1b2c_43fe_86b8_09da3ece2135 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_782e9994_1b2c_43fe_86b8_09da3ece2135">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineYear"/>
+        <rdfs:comment>De que año es el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">isOfYear</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_8388ff72_83c7_49cc_8c71_5ce72a110c48 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_8388ff72_83c7_49cc_8c71_5ce72a110c48">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineRating"/>
+        <rdfs:comment>Valoración que tiene el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasRating</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_8438abb6_7e8c_48b8_ad94_88107ef65bc8 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_8438abb6_7e8c_48b8_ad94_88107ef65bc8">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>De qué uva esta hecho el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">containsWine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_978ee2fe_1413_4904_81ac_025784e9c119 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_978ee2fe_1413_4904_81ac_025784e9c119">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineReviews"/>
+        <rdfs:comment>Número de valoraciones que tiene el video.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasReviews</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_cd79f77e_4539_4f68_9ad4_5977aa5274d1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_cd79f77e_4539_4f68_9ad4_5977aa5274d1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties"/>
+        <rdfs:comment>Propiedades que caracterizan al vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasProperties</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_e3cc9791_4e72_4ee7_b697_64be4d726065 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_e3cc9791_4e72_4ee7_b697_64be4d726065">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+        <rdfs:comment>La denominación de origen que tiene el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasDO</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_f7ba9b15_085e_4158_b1f5_de452b9046ff -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_f7ba9b15_085e_4158_b1f5_de452b9046ff">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Propiedades que aplican al vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">appliesToWine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_f83ff434_5a8b_4b04_846b_3c6fcbc6bc0a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_f83ff434_5a8b_4b04_846b_3c6fcbc6bc0a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety"/>
+        <rdfs:comment>Variedad de uva que tiene el vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">containsGrape</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineReviews"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:label xml:lang="es">hasReviews</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineRating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Valoración del vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Precio del vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:label xml:lang="es">hasYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Acidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>Acidez del vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasAcidityProperty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Body"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>Cuerpo del vino.</rdfs:comment>
+        <rdfs:label xml:lang="es">hasBodyProperty</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Acidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties"/>
+        <rdfs:comment>Acidez del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Affordable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Affordable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+        <rdfs:comment>Precio del vino de hasta 30€.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Albarino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Albarino">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety"/>
+        <rdfs:comment>Tipo de uva.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties"/>
+        <rdfs:comment>Cuerpo del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Cava -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Cava">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Cava.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Country">
+        <rdfs:comment>País de origen del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin">
+        <rdfs:comment>Denominación de origen.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Expensive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Expensive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+        <rdfs:comment>Precio del vino de más de 70€.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety">
+        <rdfs:comment>Variedad de uva utilitzada.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grenache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grenache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety"/>
+        <rdfs:comment>Tipo de uva.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Moderate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+        <rdfs:comment>Precio del vino de entre 30 y 70€.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Properties">
+        <rdfs:comment>Propiedades organolépticas del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Red -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Red">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Vino rojo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Rose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Rose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Vino rosado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Sherry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Sherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Vino de jerez.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Tempranillo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Grape_Variety"/>
+        <rdfs:comment>Tipo de uva.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#White -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#White">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+        <rdfs:comment>Vino blanco.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_782e9994_1b2c_43fe_86b8_09da3ece2135"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineYear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Precio del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineRating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineRating">
+        <rdfs:comment>Puntuación indicando la calidad total del vino. Rango [1-5].</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineReviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineReviews">
+        <rdfs:comment>Número total de reseñas del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineYear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WineYear">
+        <rdfs:comment>Año de cosecha del vino.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery">
+        <rdfs:comment>Bodega productora de vinos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Alvaro_Palacios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Alvaro_Palacios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Castilla_y_León -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Castilla_y_León">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Gomez_Cruzado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Gomez_Cruzado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Guarda_de_Leda_Selección_Tempranillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Guarda_de_Leda_Selección_Tempranillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Red"/>
+        <uoc_ignasi:OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Leda"/>
+        <uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59</uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43>
+        <uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67>
+        <uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">37.66</uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2015</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+        <uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a>
+        <uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Jerez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Jerez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2015</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Leda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Leda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Montes_Obarenes_Selección_Terroir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Montes_Obarenes_Selección_Terroir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#White"/>
+        <uoc_ignasi:OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Gomez_Cruzado"/>
+        <uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122</uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43>
+        <uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67>
+        <uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.95</uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2016</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+        <uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a>
+        <uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_0a8f8e91_22d9_4cd9_b0a8_e896b5cfc51e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_0a8f8e91_22d9_4cd9_b0a8_e896b5cfc51e">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+        <uoc_ignasi:OWLObjectProperty_41c225dd_1735_4fc4_8c89_d5c3da5b61a4 rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_2ba7e3e7_3357_4ff1_9691_e38df8ad6f0f"/>
+        <uoc_ignasi:OWLObjectProperty_8438abb6_7e8c_48b8_ad94_88107ef65bc8 rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_1236a6ab_af36_4e87_b269_ffb2a5501522"/>
+        <rdfs:label xml:lang="es">Ribera del Duero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_1236a6ab_af36_4e87_b269_ffb2a5501522 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_1236a6ab_af36_4e87_b269_ffb2a5501522">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Red"/>
+        <uoc_ignasi:OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_7528feb4_5c14_4b7f_bfa0_a2b1f2b9156f"/>
+        <uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1793</uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43>
+        <uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67>
+        <uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">324.95</uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+        <uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a>
+        <uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32>
+        <rdfs:label xml:lang="es">Unico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_2ba7e3e7_3357_4ff1_9691_e38df8ad6f0f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_2ba7e3e7_3357_4ff1_9691_e38df8ad6f0f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Country"/>
+        <uoc_ignasi:sameAs>https://dbpedia.org/page/Spain</uoc_ignasi:sameAs>
+        <rdfs:label xml:lang="es">España</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_7528feb4_5c14_4b7f_bfa0_a2b1f2b9156f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLNamedIndividual_7528feb4_5c14_4b7f_bfa0_a2b1f2b9156f">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+        <rdfs:label xml:lang="es">Vega_Sicilia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Priorat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Priorat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Rioja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Rioja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#DenominationOfOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Toneles_Moscatel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Toneles_Moscatel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Sherry"/>
+        <uoc_ignasi:OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Valdespino"/>
+        <uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">174</uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43>
+        <uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67>
+        <uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">253</uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2007</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+        <uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a>
+        <uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Valdespino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Valdespino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#L&apos;Ermita_Velles_Vinyes_Priorat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#L&apos;Ermita_Velles_Vinyes_Priorat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Red"/>
+        <uoc_ignasi:OWLObjectProperty_64adcdc8_33a8_4bc5_b78f_929206c61d7b rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Alvaro_Palacios"/>
+        <uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">87</uoc_ignasi:OWLDataProperty_220bb660_1934_4fc2_b0b5_29d56bd21a43>
+        <uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</uoc_ignasi:OWLDataProperty_24b5e543_027e_4a70_ac94_50b932ef6a67>
+        <uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1410.26</uoc_ignasi:OWLDataProperty_5a35be3d_524b_4d53_9cc8_239f6d2dc30b>
+        <uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2004</uoc_ignasi:OWLDataProperty_6857751d_1815_4bcd_9430_94d248aac930>
+        <uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</uoc_ignasi:OWLDataProperty_bcbf23af_3a32_412b_b9bd_d194dd61b67a>
+        <uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</uoc_ignasi:OWLDataProperty_f6b18196_9dca_4395_aeb5_8b2a5bc0af32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Wine">
+        <uoc_ignasi:sameAs>https://dbpedia.org/page/Category:Wine</uoc_ignasi:sameAs>
+        <rdfs:comment>Vino, tipos de vino.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#wp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#price">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#price"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_45a7e1e3_d4b7_4e8d_8340_d1d955571dde"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#price"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Moderate"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#price"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="urn:swrl:var#price"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_45a7e1e3_d4b7_4e8d_8340_d1d955571dde"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl:var#price"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Affordable"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#WinePrice"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#price"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#OWLObjectProperty_45a7e1e3_d4b7_4e8d_8340_d1d955571dde"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#price"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ignasi/ontologies/2023/3/uoc_ignasi#Expensive"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#wp"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
